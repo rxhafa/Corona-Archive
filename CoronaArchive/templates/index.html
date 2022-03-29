@@ -1,0 +1,9 @@
+{% extends "temp.html" %}
+{% block content %}
+    <h1>Corona Archive</h1><br>
+    <h2></h2>
+    {% for ft in features %}
+        <h2>{{ ft.test }} about {{ ft.title }}</h2>
+        <p>{{ ft.content }}</p>
+    {% endfor %}
+{% endblock content %}
